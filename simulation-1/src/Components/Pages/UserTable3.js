@@ -1,10 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import MaterialTable from 'material-table';
 import axios from 'axios';
-
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import RadioButtonCheckedRoundedIcon from '@material-ui/icons/RadioButtonCheckedRounded';
-
 import Checkbox from '@material-ui/core/Checkbox';
 
 function DeleteData(data){
@@ -91,6 +89,7 @@ export default function UserTable3(props) {
                 console.log(ind.active);
 
                 cdata.push({
+                    key: ind.id,
                     id: ind.id,
                     username : ind.username,
                     firstname : ind.firstName,
